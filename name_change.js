@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const mainName = "Hajra Shahab";
-  const titles = ["Transportation Economist", " Research Scientist", "Urban Planner", "City Scientist", "Data Scientist", "Policy Analyst"];
+  const titles = ["Transportation Economist", "Plangineer", " Research Scientist", "Urban Planner", "City Scientist", "Data Scientist", "Policy Analyst"];
   const nameElement = document.getElementById("dynamic-name");
 
   if (!nameElement) return;
