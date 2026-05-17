@@ -8,8 +8,9 @@
 body {
   margin: 0;
   font-family: "Merriweather", serif;
+  color: #003057;
 
-  background:
+  background-image:
     linear-gradient(
       rgba(249, 249, 221, 0.3),
       rgba(249, 249, 221, 0.3)
@@ -18,7 +19,7 @@ body {
     url("images/background2.jpg");
 
   background-size:
-    cover,
+    100% 100%,
     100% 50%,
     100% 50%;
 
@@ -31,8 +32,6 @@ body {
     no-repeat,
     no-repeat,
     no-repeat;
-
-  color: #003057;
 }
 /* ===== Navigation Links Hover & Active State ===== */
 .nav-link:hover,
