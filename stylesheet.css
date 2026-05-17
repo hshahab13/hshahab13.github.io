@@ -5,34 +5,22 @@
   box-sizing: border-box;
 }
 
+/* ===== Global Page Styles ===== */
 body {
   margin: 0;
   font-family: "Merriweather", serif;
-  color: #003057;
-
-  background-image:
-    linear-gradient(
-      rgba(249, 249, 221, 0.3),
-      rgba(249, 249, 221, 0.3)
-    ),
-    url("images/background.jpg"),
-    url("images/background2.jpg");
-
-  background-size:
-    100% 100%,
-    100% 50%,
-    100% 50%;
-
-  background-position:
-    center,
-    top,
-    bottom;
-
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat;
+  background:
+  linear-gradient(
+    rgba(249, 249, 221, 0.3),
+    rgba(249, 249, 221, 0.3)
+  ),
+  url("images/background_pic_4.avif");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  color: #003057;  /* darker text on lighter background */
 }
+
 /* ===== Navigation Links Hover & Active State ===== */
 .nav-link:hover,
 .nav-link.active {
