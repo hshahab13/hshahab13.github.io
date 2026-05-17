@@ -24,14 +24,14 @@ body {
 /* ===== Navigation Links Hover & Active State ===== */
 .nav-link:hover,
 .nav-link.active {
-  text-decoration: underline wavy #FF5A5F;
+  text-decoration: underline #FF5A5F;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
 
 /* ===== Utility Class for Wavy Underline ===== */
 .curly-underline {
-  text-decoration: underline wavy #FF5A5F;
+  text-decoration: underline #FF5A5F;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
