@@ -1,3 +1,7 @@
+<!-- ======================================================= -->
+<!-- Header Title -->
+<!-- ======================================================= -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +12,52 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
 </head>
 
-  <!-- Scripts -->
+<!-- Scripts ================================================ --> 
 <script src="ticker.js"></script>
 <script src="research-filter.js"></script>
 <script src="name_change.js" defer></script>
 
+ <!-- Floating particles ==================================== --> 
 <body>
-  <!-- Floating particles -->
   <div class="particles"></div>
   <div class="top-strip"></div>
 
-  <!-- Header Strip -->
-  <header class="header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Hajra Shahab</a>
-      <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About Me</a></li>
-          <li><a href="#news" class="nav-link">News</a></li>
-          <li><a href="#research" class="nav-link">Research</a></li>
-          <li><a href="#resources/cv_recent.pdf" class="nav-link">CV</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- ======================================================= -->
+<!-- Header Strip -->
+<!-- ======================================================= -->
 
+<header class="header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">Hajra Shahab</a>
+    <nav>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#news" class="nav-link">News</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <!-- <li><a href="#resources/cv_recent.pdf" class="nav-link">CV</a></li> -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ======================================================= -->
 <!-- Main content -->
+<!-- ======================================================= -->
+
 <main>
-  <!-- Profile Section -->
+  <!-- Profile Section ==================================== --> 
   <section class="profile-container"> 
     <div class="profile-grid" id ="about">
-      <!-- Profile Text -->
+
+  <!-- Profile Text ==================================== --> 
       <div class="profile-text">
         <h1 class="name" id="dynamic-name"></h1>
         <p>
           I am a Ph.D. student in the School of City and Regional Planning (SCaRP) at
           Georgia Institute of Technology. I work as a Graduate Research Assistant at the
           <a href="https://resilience.research.gatech.edu/">Center for Urban Resilience and Analytics (CURA)</a>
-          with the <a href="https://www.linkedin.com/company/remap-research-group/posts/?feedView=all">Resilient and Equitable Mobility Analytics and Planning (REMAP)</a>
+          with <a href="https://www.linkedin.com/company/remap-research-group/posts/?feedView=all">Resilient and Equitable Mobility Analytics and Planning (REMAP)</a>
           research group, advised by Dr.
           <a href="https://scholar.google.com/citations?user=Zx4Sk7YAAAAJ&hl=en&inst=3203679203499159833">Rounaq Basu</a>.
         </p>
@@ -54,11 +65,11 @@
           I earned my MS in Public Policy and Management with a Data Analytics specialization (MSPPM-DA) from Carnegie Mellon University (2022) 
           and a BSc in Economics with a minor in Public Management from Lahore University of Management Sciences (2018). 
           Prior to beginning my doctoral studies, I worked as a Senior Transportation Economics and Data Science Analyst in Boston, MA, 
-          where I applied economic and data-driven analyses to support transportation planning and mobility projects for 
-          state departments of transportation, federal agencies, and other public-sector organizations.
+          where I applied econometric and data-driven analyses to support transportation planning and mobility projects for 
+          state departments of transportation (DOTs), federal agencies, and other public-sector and private organizations.
         </p>
 
-        <!-- Contact Icons -->
+  <!-- Contact Icons ==================================== --> 
         <div class="contact-icons">
           <a href="mailto:hajrashahab05@gmail.com" aria-label="Email"><img src="images/email_logo.png" alt="Email"></a>
           <a href="https://scholar.google.com/citations?user=5VVGwfMAAAAJ&hl=en&inst=3203679203499159833" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><img src="images/google_scholar.png" alt="Google Scholar"></a>
@@ -69,40 +80,60 @@
         </div>
       </div>
 
-      <!-- Profile Image -->
+  <!-- Profile Image ==================================== --> 
       <div class="profile-image">
         <img src="images/hajra_shahab.jpg" alt="profile photo">
       </div>
     </div>
   </section>
 
-  <!-- Research Overview Section -->
+  <!-- Research Overview ================================ --> 
   <section class="research-overview">
     <div class="research-container"></div>
       <h2>Research</h2>
       <p>
         My research spans across four interconnected areas:
         <br>1. Travel Behavior Analysis
-        <br>2. Urban Computing and Networks
-        <br>3. Advanced Methods in Modeling (Causal Inference & Econometrics)
+        <br>2. Advanced Methods in Modeling (Causal Inference & Econometrics)
+        <br>3. Urban Computing and Networks
         <br>4. Land Use & New Mobility Adoption
       </p>
       <p>
-        My work focuses on analyzing individual travel patterns and applying computational
-        methods to address critical transportation equity challenges, including climate
-        injustice and safety. Some highlighted research is shared below.
+        My research examines cities as representations of place and people, with a focus on how latent factors such as urban form and human attitudes and behaviors shape mobility patterns. 
+        I further study how these patterns evolve as cities grapple with climate shocks,🌡️⛈️ adoption of new mobility technologies, 🤖🚗 and growing infrastructure challenges. 🌉🚉 
       </p>
     </div>
   </section>
 </main>
 
-  <!-- News Section -->
+<!-- ======================================================= -->
 <!-- News Section -->
+<!-- ======================================================= -->
+
 <div class="news-ticker-container" id="news">
   <h2>News</h2>
 
   <div class="news-ticker-wrapper">
     <div class="news-ticker" id="news-ticker">
+
+      <div class="news-item">
+        <span class="news-date">Apr 2026</span>
+        <span class="news-text">
+          Co-authored report published by the The National Academies of Sciences, Engineering, and Medicine Transportation Research Board, focused on developing a comprehensive and actionable guide for State DOTs and MPOs to identify uncertainty, build resilience, and integrate these methods into long-range transportation planning.
+      </div>
+      
+      <div class="news-item">
+        <span class="news-date">Apr 2026</span>
+        <span class="news-text">
+          Awarded International Studio Fellowship by Center for Urban Resilience and Analytics (CURA) to support travel to Tokyo, Japan for Smart City Workshop in summer 2026.
+      </div>
+
+      <div class="news-item">
+        <span class="news-date">Mar 2026</span>
+        <span class="news-text">
+          Awarded Wendy Tao International Smart Cities Scholarship to support research on understanding how urban form and transportation systems shape public attitudes toward autonomous vehicles — and what that means for equitable and sustainable deployment. 
+        </span>
+      </div>
 
       <div class="news-item">
         <span class="news-date">Jan 2026</span>
@@ -130,12 +161,15 @@
     </div>
   </div>
 </div>
- 
-<!-- ===== Research Section Container (Paper Style) ===== -->
+
+<!-- ======================================================= -->
+<!-- Research Section Container (Paper Style) -->
+<!-- ======================================================= -->
+
 <div class="research-section-container" id = "research">
   <h2>Highlighted Research</h2>
 
-  <!-- Filter Buttons -->
+<!-- Filter Buttons ==================================== --> 
   <div class="filter-buttons">
   <button class="filter-btn default active" data-topic="all">All</button>
   <button class="filter-btn travel-behavior" data-topic="travel-behavior">
@@ -179,10 +213,11 @@
   </button>
 </div>
 
-<!-- ===== Research Tiles Grid ===== -->
+ <!-- Research Tiles Grid  ================================ --> 
+
 <div class="research-grid">
 
-  <!-- Tile 1 -->
+  <!-- Tile 1- NO HEAT NYC ========================= --> 
   <div class="research-tile"
        data-topic="travel-behavior"
        data-type="paper"
@@ -213,14 +248,13 @@
 
     <p class="authors">
       <a href="https://scholar.google.com/citations?user=Zx4Sk7YAAAAJ&hl=en&inst=3203679203499159833">
-        Rounaq Basu,
-      </a>
+        Rounaq Basu
+      </a> and 
       <strong>
-        <a href="https://scholar.google.com/citations?user=5VVGwfMAAAAJ&hl=en&inst=3203679203499159833">
+      <a href="https://scholar.google.com/citations?user=5VVGwfMAAAAJ&hl=en&inst=3203679203499159833">
           Hajra Shahab
-        </a>
-      </strong> and
-      <span>Shambhavi Sinha</span>
+      </a>
+      </strong>
     </p>
 
     <p>
@@ -243,7 +277,64 @@
     </p>
   </div>
 
-  <!-- Tile 2
+  <!-- Tile 2- Cintra Robotaxi Project ========================= --> 
+  <div class="research-tile"
+       data-topic="modeling"
+       data-type="paper"
+       data-year="2025">
+
+    <span class="tile-tag">Advanced Modeling</span>
+    <span class="meta-chip">Paper</span>
+    <span class="meta-chip">2025</span>
+
+    <div class="image-container">
+      <img src="images/robotaxi_before.webp"
+           alt="Robotaxi baseline scenario"
+           class="before-image"
+           loading="lazy">
+      <img src="images/robotaxi_after.jpg"
+           alt="Robotaxi enhanced scenario"
+           class="after-image"
+           loading="lazy">
+    </div>
+
+    <h3>
+      <a href="#">
+        Traveler Preferences in Hypothetical Commute Scenarios: Robotaxi vs. Human-Driven Taxi vs. Self-Drive
+      </a>
+    </h3>
+
+    <p class="authors">
+      <strong>
+      <a href="https://scholar.google.com/citations?user=5VVGwfMAAAAJ&hl=en&inst=3203679203499159833">
+        Hajra Shahab,
+      </a>
+      </strong>
+      <a href="https://orcid.org/0000-0002-1705-3833">
+        Seung Eun Choi,
+      </a>
+      <a href="https://scholar.google.com/citations?user=84jTPKEAAAAJ&hl=en&inst=3203679203499159833">
+        Patricia Mokhtarian,
+      </a> and 
+      <a href="https://scholar.google.com/citations?user=Zx4Sk7YAAAAJ&hl=en&inst=3203679203499159833">
+        Rounaq Basu
+      </a> 
+      
+    </p>
+
+    <!-- <p>
+      <em>Travel Behavior and Society</em>, 2025
+    </p> -->
+
+    <p>
+      Examining mode selection among robotaxi, human-driven taxi, and driven-alone vehicles under cost-neutral conditions with varying commute times, 
+      and identifying the underlying attitudinal factors influencing these choices. 
+    </p>
+      </a>
+    </p> 
+  </div>
+
+  <!-- Tile 3- Urban form and archetypes ========================= --> 
   <div class="research-tile"
        data-topic="urban-computing"
        data-type="paper"
@@ -270,8 +361,14 @@
       </a>
     </h3>
     <p class="authors">
-      <a href="#">Hajra Shahab</a>,
-      <strong>Rounaq Basu</strong>
+      <strong>
+        <a href="https://scholar.google.com/citations?user=5VVGwfMAAAAJ&hl=en&inst=3203679203499159833">
+          Hajra Shahab
+        </a> 
+      </strong> and
+      <a href="https://scholar.google.com/citations?user=Zx4Sk7YAAAAJ&hl=en&inst=3203679203499159833">
+        Rounaq Basu
+      </a> 
     </p>
 
     <p>
@@ -292,106 +389,56 @@
         <strong>Project Code</strong>
       </a>
     </p>
-  </div> -->
-
-  <!-- Tile 3 -->
-  <div class="research-tile"
-       data-topic="modeling"
-       data-type="paper"
-       data-year="2025">
-
-    <span class="tile-tag">Advanced Modeling</span>
-    <span class="meta-chip">Paper</span>
-    <span class="meta-chip">2025</span>
-
-    <div class="image-container">
-      <img src="images/robotaxi_before.webp"
-           alt="Robotaxi baseline scenario"
-           class="before-image"
-           loading="lazy">
-      <img src="images/robotaxi_after.jpg"
-           alt="Robotaxi enhanced scenario"
-           class="after-image"
-           loading="lazy">
-    </div>
-
-    <h3>
-      <a href="#">
-        Understanding Different Mode Choice Groups (Robotaxi vs. Human Driver) for Long-Distance Commutes
-      </a>
-    </h3>
-
-    <!-- <p class="authors">
-      <a href="#">Author 1</a>,
-      <strong>Author 2</strong>
-    </p> -->
-
-    <!-- <p>
-      <em>Travel Behavior and Society</em>, 2025
-    </p>
-
-    <p>
-      Description of the modeling project, focusing on simulations and predictive insights.
-    </p>
-
-    <p class="links">
-      <a href="#">
-        <img src="images/code_icon.png"
-             alt="GitHub repository icon"
-             class="link-icon">
-        <strong>Project Code</strong>
-      </a>
-    </p> -->
-  </div>
+  </div> 
 </div>
 </div>
 
-<!-- ===== Miscellanea Section Container (Paper Style) ===== -->
+<!-- ======================================================= -->
+<!-- Miscellanea Section Container (Paper Style) -->
+<!-- ======================================================= -->
+ 
 <div class="misc-section-container">
   <h2>Miscellaneous</h2>
 
   <table class="misc-table">
 
-    <!-- Selected Awards -->
-    <tr>
-      <td class="misc-label">
-        <div class="colored-box box-awards">
-          <h3>Selected Awards</h3>
-        </div>
-      </td>
-      <td class="misc-content">
-        <ul class="no-bullets">
-        <li>
-          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7447387736933847040/"
-            target="_blank"
-            rel="noopener">
-            Wendy Tao International Smart Cities Scholarship (2026)
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Center for Urban Resilience and Analytics International Studio Fellowship (2026)
-          </a>
-        </li>
-        <li>
-          <a href="https://mobility21.cmu.edu/whats_happening/women-in-transportation-fellow-hajra-shahab-graduates-and-awarded-the-barbara-jenkins-service-award/"
-            target="_blank"
-            rel="noopener">
-            Barbara Jenkins Service Award, Carnegie Mellon University (2022)
-          </a>
-        </li>
-        <li>
-          <a href="https://mobility21.cmu.edu/whats_happening/mobility21-utc-welcomes-new-traffic21-women-in-transportation-fellow-hajra-shahab/"
-            target="_blank"
-            rel="noopener">
-            Women in Transportation Fellowship, Traffic 21 Institute (2020–2022)
-          </a>
-        </li>
-      </ul>
-      </td>
-    </tr>
+<!-- Selected Awards ======================================= --> 
+<tr>
+  <td class="misc-label">
+    <div class="colored-box box-awards">
+      <h3>Selected Awards</h3>
+    </div>
+  </td>
+  <td class="misc-content">
+    <ul class="no-bullets">
+    <li>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7447387736933847040/"
+        target="_blank"
+        rel="noopener">
+        Wendy Tao International Smart Cities Scholarship (2026)
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://mobility21.cmu.edu/whats_happening/women-in-transportation-fellow-hajra-shahab-graduates-and-awarded-the-barbara-jenkins-service-award/"
+        target="_blank"
+        rel="noopener">
+        Barbara Jenkins Service Award, Carnegie Mellon University (2022)
+      </a>
+    </li>
 
-<!-- Academic Services -->
+    <li>
+      <a href="https://mobility21.cmu.edu/whats_happening/mobility21-utc-welcomes-new-traffic21-women-in-transportation-fellow-hajra-shahab/"
+        target="_blank"
+        rel="noopener">
+        Women in Transportation Fellowship, Traffic 21 Institute (2020–2022)
+      </a>
+    </li>
+  </ul>
+  </td>
+</tr>
+
+<!-- Academic Services ======================================= -->
 <tr>
   <td class="misc-label">
     <div class="colored-box box-service">
@@ -414,8 +461,8 @@
       <!-- Student Mentorship -->
       <li>
         <a href="https://www.linkedin.com/in/shambhavi-sinha19/"
-          target="_blank"
-          rel="noopener">
+        target="_blank"
+        rel="noopener">
           Students Mentored — Shambhavi Sinha (Georgia Institute of Technology), </a>
         <a href="https://www.linkedin.com/in/lily-krachman-a15330337/"
           target="_blank"
@@ -427,27 +474,30 @@
   </td>
 </tr>
 
-    <!-- Professional Activities -->
-    <tr>
-      <td class="misc-label">
-        <div class="colored-box box-professional">
-          <h3>Professional Activities</h3>
-        </div>
-      </td>
-      <td class="misc-content">
-        <ul class="no-bullets">
-          <li>
-            <a href="https://www.wtsinternational.org/chapters/atlanta" target="_blank" rel="noopener">
-              Member - Women in Transportation Seminar (WTS- Atlanta)
-            </a>
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+<!-- Professional Activities ======================================= -->
+<tr>
+  <td class="misc-label">
+    <div class="colored-box box-professional">
+      <h3>Professional Activities</h3>
+    </div>
+  </td>
+  <td class="misc-content">
+    <ul class="no-bullets">
+      <li>
+        <a href="https://www.wtsinternational.org/chapters/atlanta" target="_blank" rel="noopener">
+          Member - Women in Transportation Seminar (WTS- Atlanta)
+        </a>
+      </li>
+    </ul>
+  </td>
+</tr>
+</table>
 </div>
 
-  <!-- Site Credit -->
+<!-- ============================================================= -->
+<!-- Site Credit -->
+<!-- ============================================================= -->
+
   <p class="site-credit">
     Template adapted from
     <a href="https://jonbarron.info/" target="_blank" rel="noopener">1</a> and

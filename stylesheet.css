@@ -18,53 +18,60 @@ body {
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
-  color: #003057;  /* darker text on lighter background */
 }
 
 /* ===== Navigation Links Hover & Active State ===== */
 .nav-link:hover,
 .nav-link.active {
   text-decoration: underline #FF5A5F;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 3px;
   text-underline-offset: 4px;
 }
 
-/* ===== Utility Class for Wavy Underline ===== */
+/* ===== Utility Class for Underline ===== */
 .curly-underline {
   text-decoration: underline #FF5A5F;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 4px;
   text-underline-offset: 4px;
 }
 
 /* ===== Header and Navigation ===== */
 .header {
   background: var(--bg-glass);       /* semi-transparent background */
-  backdrop-filter: blur(10px);       /* blur effect */
+  backdrop-filter: blur(20px);       /* blur effect */
   border-bottom: 4px solid #ECA72C;  /* amber accent line */
   box-shadow: var(--shadow-light);   /* subtle shadow */
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  color: #ECA72C;
+  color: #721121;
   transition: var(--transition);
 }
 
 /* ===== Header Container ===== */
 .header .nav-container {
-  max-width: 1400px;
-  font-size: 2rem; 
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;               /* vertical alignment */
+  align-items: center;
   padding: 1rem clamp(1rem, 4vw, 2rem);
+}
+
+.nav-container a {
+  font-size: 1.5rem;
+}
+
+.logo {
+  position: relative;
+  display: inline-block; /* important fix */
 }
 
 /* ===== Header Logo ===== */
 .logo {
   position: relative;                 /* needed for pseudo-element */
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
   font-family: "Lora", serif; 
   color: #721121;
@@ -80,17 +87,13 @@ body {
   width: 0%;
   height: 0.35em;                     /* thickness of highlight */
   background-color: #B0A990;          /* amber marker color */
-  transition: width 0.3s ease;
+  transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   z-index: -1;                        /* behind text */
   border-radius: 2px;
 }
 
 .logo:hover::after {
   width: 100%;                        /* expands full width of logo text on hover */
-}
-
-.logo:hover {
-  color: #721121;         /* optional: darken text on hover */
 }
 
 /* ===== Navigation Links ===== */
@@ -172,7 +175,7 @@ main a {
 }
 
 main a:hover {
-  text-decoration: underline wavy #FF5A5F;
+  text-decoration: underline #FF5A5F;
 }
 
 /* ===== Profile Section ===== */
@@ -218,7 +221,7 @@ main a:hover {
 }
 
 .profile-text a:hover {
-  text-decoration: underline wavy #FF5A5F;
+  text-decoration: underline #FF5A5F;
 }
 
 .contact-icons {
@@ -743,7 +746,7 @@ main a:hover {
 }
 
 .research-tile .links a:hover {
-  text-decoration: underline wavy #FF5A5F;
+  text-decoration: underline #FF5A5F;
 }
 
 /* ===== Miscellanea Section Container (Paper Style) ===== */
@@ -796,7 +799,7 @@ main a:hover {
 }
 
 .misc-content a:hover {
-  text-decoration: underline wavy #ff5a5f;
+  text-decoration: underline #ff5a5f;
 }
 
 /* ===== Colored Boxes (Labels) ===== */
