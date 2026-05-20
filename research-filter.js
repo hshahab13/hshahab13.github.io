@@ -1,32 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
+
   const tiles = document.querySelectorAll('.research-tile');
 
   const activeFilters = {
     topic: 'all',
-    type: 'all',
-    year: 'all'
+    type:  'all',
+    year:  'all'
   };
 
+  /* ======================
+     CORE FILTER LOGIC
+     ====================== */
   function applyFilters() {
-  tiles.forEach(tile => {
-    const matchesTopic =
-      activeFilters.topic === 'all' ||
-      tile.dataset.topic === activeFilters.topic;
+    tiles.forEach(tile => {
+      const matchesTopic = activeFilters.topic === 'all' || tile.dataset.topic === activeFilters.topic;
+      const matchesType  = activeFilters.type  === 'all' || tile.dataset.type  === activeFilters.type;
+      const matchesYear  = activeFilters.year  === 'all' || tile.dataset.year  === activeFilters.year;
 
-    const matchesType =
-      activeFilters.type === 'all' ||
-      tile.dataset.type === activeFilters.type;
+      tile.classList.toggle('hidden', !(matchesTopic && matchesType && matchesYear));
+    });
+  }
 
-    const matchesYear =
-      activeFilters.year === 'all' ||
-      tile.dataset.year === activeFilters.year;
-
-    const matches = matchesTopic && matchesType && matchesYear;
-
-    // Toggle 'hidden' class instead of display:none
-    tile.classList.toggle('hidden', !matches);
-  });
-}
+  function setActiveButton(selector, value) {
+    document.querySelectorAll(selector).forEach(b => b.classList.remove('active'));
+    document.querySelector(`${selector}[data-topic="${value}"], ${selector}[data-value="${value}"]`)
+      ?.classList.add('active');
+  }
 
   /* ======================
      TOPIC BUTTONS
@@ -34,14 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.filter-btn[data-topic]').forEach(btn => {
     btn.addEventListener('click', () => {
       activeFilters.topic = btn.dataset.topic;
-
-      // Active UI
-      document
-        .querySelectorAll('.filter-btn[data-topic]')
-        .forEach(b => b.classList.remove('active'));
-
-      btn.classList.add('active');
-
+      setActiveButton('.filter-btn[data-topic]', btn.dataset.topic);
       applyFilters();
     });
   });
@@ -52,17 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
     btn.addEventListener('click', () => {
       const filter = btn.dataset.filter; // "type" or "year"
-      const value = btn.dataset.value;
+      const value  = btn.dataset.value;
 
       activeFilters[filter] = value;
-
-      // Active UI scoped to group
-      document
-        .querySelectorAll(`.filter-btn[data-filter="${filter}"]`)
-        .forEach(b => b.classList.remove('active'));
-
-      btn.classList.add('active');
-
+      setActiveButton(`.filter-btn[data-filter="${filter}"]`, value);
       applyFilters();
     });
   });
@@ -72,21 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
      ====================== */
   document.querySelectorAll('.tile-tag').forEach(tag => {
     tag.addEventListener('click', () => {
-      const topic =
-        tag.closest('.research-tile')?.dataset.topic || 'all';
+      const topic = tag.closest('.research-tile')?.dataset.topic || 'all';
 
       activeFilters.topic = topic;
-
-      // Sync topic buttons
-      document
-        .querySelectorAll('.filter-btn[data-topic]')
-        .forEach(b => b.classList.remove('active'));
-
-      document
-        .querySelector(`.filter-btn[data-topic="${topic}"]`)
-        ?.classList.add('active');
-
+      setActiveButton('.filter-btn[data-topic]', topic);
       applyFilters();
     });
   });
+
+  /* ======================
+     INITIALISE
+     ====================== */
+  applyFilters();
+
 });
