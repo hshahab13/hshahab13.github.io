@@ -420,8 +420,8 @@ main a:hover {
 
 /* ----- Topic Filter Colors ----- */
 .filter-btn[data-topic="all"]             { border-color: #eca72c; }
-.filter-btn[data-topic="travel-behavior"] { border-color: #ff5a5f; }
-.filter-btn[data-topic="urban-computing"] { border-color: #721121; }
+.filter-btn[data-topic="travel-behavior"] { border-color: #D16666; }
+.filter-btn[data-topic="urban-computing"] { border-color: #773344; }
 .filter-btn[data-topic="modeling"]        { border-color: #b0a990; }
 .filter-btn[data-topic="econometrics"]    { border-color: #c2d3cd; }
 
@@ -429,10 +429,10 @@ main a:hover {
 .filter-btn[data-topic="all"].active             { background-color: #eca72c; color: #fff; }
 
 .filter-btn[data-topic="travel-behavior"]:hover,
-.filter-btn[data-topic="travel-behavior"].active { background-color: #ff5a5f; color: #fff; }
+.filter-btn[data-topic="travel-behavior"].active { background-color: #D16666; color: #fff; }
 
 .filter-btn[data-topic="urban-computing"]:hover,
-.filter-btn[data-topic="urban-computing"].active { background-color: #721121; color: #fff; }
+.filter-btn[data-topic="urban-computing"].active { background-color: #773344; color: #fff; }
 
 .filter-btn[data-topic="modeling"]:hover,
 .filter-btn[data-topic="modeling"].active        { background-color: #b0a990; color: #fff; }
@@ -529,8 +529,8 @@ main a:hover {
 
 /* ----- Tile Topic Background Colors ----- */
 .research-tile[data-topic="all"]             { background-color: #eca72c; color: #fff;    }
-.research-tile[data-topic="urban-computing"] { background-color: #721121; color: #fff;    }
-.research-tile[data-topic="travel-behavior"] { background-color: #ff5a5f; color: #002a32; }
+.research-tile[data-topic="urban-computing"] { background-color: #773344; color: #fff;    }
+.research-tile[data-topic="travel-behavior"] { background-color: #D16666; color: #002a32; }
 .research-tile[data-topic="modeling"]        { background-color: #b0a990; color: #002a32; }
 .research-tile[data-topic="econometrics"]    { background-color: #c2d3cd; color: #002a32; }
 
@@ -569,8 +569,8 @@ main a:hover {
 
 /* Tag colors by topic */
 .research-tile[data-topic="all"] .tile-tag             { background-color: #eca72c; }
-.research-tile[data-topic="urban-computing"] .tile-tag { background-color: #721121; }
-.research-tile[data-topic="travel-behavior"] .tile-tag { background-color: #ff5a5f; color: #002a32; }
+.research-tile[data-topic="urban-computing"] .tile-tag { background-color: #773344; }
+.research-tile[data-topic="travel-behavior"] .tile-tag { background-color: #D16666; color: #002a32; }
 .research-tile[data-topic="modeling"] .tile-tag        { background-color: #b0a990; color: #002a32; }
 .research-tile[data-topic="econometrics"] .tile-tag    { background-color: #c2d3cd; color: #002a32; }
 
@@ -609,9 +609,9 @@ main a:hover {
 
 /* ----- Tile Links (default) ----- */
 .research-tile a        { color: #002a32; text-decoration: none; }
-.research-tile .links a { color: #721121; font-weight: 500; text-decoration: none; }
+.research-tile .links a { color: #773344; font-weight: 500; text-decoration: none; }
 
-.research-tile .links a:hover { text-decoration: underline #ff5a5f; }
+.research-tile .links a:hover { text-decoration: underline #D16666; }
 
 .links a   { display: inline-flex; align-items: center; gap: 6px; }
 .link-icon { width: 16px; height: 16px; }
