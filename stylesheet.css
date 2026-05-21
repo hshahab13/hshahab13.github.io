@@ -250,8 +250,8 @@ main a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;           /* Circular icon buttons */
   background-color: #eca72c;
   overflow: hidden;
@@ -422,7 +422,7 @@ main a:hover {
 .filter-btn[data-topic="all"]             { border-color: #eca72c; }
 .filter-btn[data-topic="travel-behavior"] { border-color: #D16666; }
 .filter-btn[data-topic="urban-computing"] { border-color: #773344; }
-.filter-btn[data-topic="modeling"]        { border-color: #b0a990; }
+.filter-btn[data-topic="modeling"]        { border-color: #b0a990; } 
 .filter-btn[data-topic="econometrics"]    { border-color: #c2d3cd; }
 
 .filter-btn[data-topic="all"]:hover,
@@ -664,15 +664,26 @@ main a:hover {
   vertical-align: middle;
 }
 
-/* ----- Misc Content Links ----- */
+/* ----- Shared Link Base Style ----- */
+.nav-link,
 .misc-content a {
+  font-family: "Merriweather", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: #b0a990;
-  font-weight: 500;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.misc-content a:hover {
+/* ----- Shared Hover & Active ----- */
+.nav-link:hover,
+.nav-link.active,
+.misc-content a:hover,
+.misc-content a.active {
+  color: #eca72c;
   text-decoration: underline #ff5a5f;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
 }
 
 /* ----- Unordered List Reset (used inside misc table) ----- */
@@ -703,6 +714,16 @@ main a:hover {
   border-bottom: none; /* overrides the global h3 border */
   padding-bottom: 0;   /* overrides the global h3 padding */
   text-align: center;
+}
+
+.affiliation {
+  color: #b0a990;
+  font-weight: 400;
+}
+
+.section-label {
+  color: #b0a990;
+  font-weight: 400;
 }
 
 .box-awards,
